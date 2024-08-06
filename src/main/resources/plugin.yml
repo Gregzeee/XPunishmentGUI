@@ -5,6 +5,8 @@ api-version: '1.20'
 authors: [ Gregzee ]
 description: XPunishmentGUI provides a simple GUI for easy player punishment aimed at making staff members life easier, supporting LiteBans and AdvancedBan. While also offering configurability and performance.
 load: POSTWORLD
+depend:
+  - CommandAPI
 libraries:
   - de.exlll:configlib-yaml:${configlibVersion}
   - de.exlll:configlib-paper:${configlibVersion}

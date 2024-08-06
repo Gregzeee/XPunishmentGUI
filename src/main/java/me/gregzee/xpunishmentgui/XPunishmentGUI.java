@@ -1,5 +1,8 @@
 package me.gregzee.xpunishmentgui;
 
+import dev.jorel.commandapi.CommandAPI;
+import dev.jorel.commandapi.CommandAPIBukkitConfig;
+import dev.jorel.commandapi.CommandAPIConfig;
 import lombok.Getter;
 import me.gregzee.xpunishmentgui.config.ConfigManager;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -11,6 +14,12 @@ public final class XPunishmentGUI extends JavaPlugin {
     @Getter
     private static XPunishmentGUI instance;
     public ConfigManager configManager;
+
+    @Override
+    public void onLoad() {
+        CommandAPI.onLoad(new CommandAPIBukkitConfig(this).silentLogs(true));
+        CommandAPI.onEnable();
+    }
 
     @Override
     public void onEnable() {
