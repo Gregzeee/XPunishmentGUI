@@ -4,6 +4,7 @@ import dev.jorel.commandapi.CommandAPI;
 import dev.jorel.commandapi.CommandAPIBukkitConfig;
 import dev.jorel.commandapi.CommandAPIConfig;
 import lombok.Getter;
+import me.gregzee.xpunishmentgui.command.PunishCommand;
 import me.gregzee.xpunishmentgui.config.ConfigManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -41,10 +42,16 @@ public final class XPunishmentGUI extends JavaPlugin {
         saveDefaultConfig();
     }
 
+    /**
+     * Registers the plugin commands.
+     */
     private void registerCommands() {
 
     }
 
+    /**
+     * Registers the plugin listeners.
+     */
     private void registerListeners() {
 
     }
