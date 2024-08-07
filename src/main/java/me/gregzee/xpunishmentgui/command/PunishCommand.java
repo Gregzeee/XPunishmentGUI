@@ -12,7 +12,7 @@ public class PunishCommand {
 			.withArguments(new PlayerArgument("target"))
 			.withUsage("/punish <target>")
 			.executesPlayer((player, args) -> {
-				// logic here?
+				// logic here
 			});
 	}
 }
