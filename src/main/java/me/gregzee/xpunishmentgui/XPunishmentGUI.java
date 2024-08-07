@@ -46,7 +46,7 @@ public final class XPunishmentGUI extends JavaPlugin {
      * Registers the plugin commands.
      */
     private void registerCommands() {
-
+        PunishCommand.register();
     }
 
     /**
