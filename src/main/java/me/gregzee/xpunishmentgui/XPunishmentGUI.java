@@ -38,7 +38,7 @@ public final class XPunishmentGUI extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        getLogger().info("Disabling plugin 'TotemGuard'...");
+        getLogger().info("Disabling plugin 'XPunishmentGUI'...");
         saveDefaultConfig();
     }
 
@@ -46,7 +46,7 @@ public final class XPunishmentGUI extends JavaPlugin {
      * Registers the plugin commands.
      */
     private void registerCommands() {
-        PunishCommand.register();
+        new PunishCommand();
     }
 
     /**
