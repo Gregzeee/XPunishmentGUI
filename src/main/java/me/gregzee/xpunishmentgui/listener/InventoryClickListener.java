@@ -22,7 +22,7 @@ public class InventoryClickListener implements Listener {
 
 		ItemStack clickedItem = event.getCurrentItem();
 
-		if (clickedItem != null && clickedItem.getType() == Material.BARRIER) {
+		if (clickedItem != null && clickedItem.getType() == Material.AIR) {
 
 		}
 	}
