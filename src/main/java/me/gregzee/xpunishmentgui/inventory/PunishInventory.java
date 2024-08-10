@@ -6,20 +6,18 @@ import org.bukkit.inventory.InventoryHolder;
 import org.jetbrains.annotations.NotNull;
 
 public class PunishInventory implements InventoryHolder {
+	private final Inventory punishInventory;
 
-	private final Inventory inventory;
-
-	public PunishInventory(Player player, Player target) {
-		this.inventory = createPunishInventory(player, target);
+	public PunishInventory(Player target) {
+		this.punishInventory = createPunishInventory(target);
 	}
 
 	/**
 	 * Creates the punish inventory for the specified player with the target specified.
 	 *
-	 * @param player the player to open the inventory for
 	 * @param target the player to punish
 	 */
-	public Inventory createPunishInventory(Player player, Player target) {
+	public Inventory createPunishInventory(Player target) {
 		// logic here
 
 		return null;
@@ -31,6 +29,6 @@ public class PunishInventory implements InventoryHolder {
 	 */
 	@Override
 	public @NotNull Inventory getInventory() {
-		return this.inventory;
+		return this.punishInventory;
 	}
 }
